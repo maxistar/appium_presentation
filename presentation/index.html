@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Appium</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -17,73 +17,133 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="#000000" data-background-image="/images/lord_of_the_tests.jpg">
-				<div>
-					Three tools for web tests, high in the sky,<br />
-					Selenium, Puppeteer, and Cypress—oh my!<br />
-					Five for WebDriver and Playwright’s might,<br />
-					Their scripts executing deep in the night,<br />
-					One for the mobile, where apps crawl,<br />
-					In the realm of devices, where tests must sprawl.<br />
-					One tool to rule them all, one tool to bind,<br />
-					Appium, the mighty, none left behind,<br />
-					In the realm of testing, where shadows lie,<br />
-					Automate it all, or at least we’ll try!<br />
-				</div>
+
+				<section  data-background="#ffffff">
+					<img width="500" src="/images/lord_of_the_tests.jpg" />
+					<h2>One Tool to rule them all...</h2>
+					<img class="fragment" style="vertical-align: center;" width="400" src="/images/appium-logo-horiz.png" />
+				</section>
 				
+				<section  data-background="#ffffff">
+					<img style="vertical-align: center;" width="400" src="/images/appium-logo-horiz.png" />
+					<p>Appium is an open-source project and ecosystem of related software, designed to facilitate UI automation of many app platforms, including mobile (iOS, Android, Tizen), browser (Chrome, Firefox, Safari), desktop (macOS, Windows), TV (Roku, tvOS, Android TV, Samsung), and more!</p>
 				</section>
-				<section>
-					<h1>What is Appium?</h1>
-					<p>Appium is an open source automation tool for running scripts and testing native applications, mobile-web applications and hybrid applications on Android or iOS.</p>
+
+				<section  data-background="#ffffff">
+					<img width="500" src="/images/one-does-not.jpg" />
+					<div class="r-hstack">
+						<img width="150" src="/images/cypress.jpeg" />
+						<img width="80" src="/images/puppeteer.png" />
+						<img width="300" src="/images/playwright.png" />
+						<img width="250" src="/images/selenium.png" />
+					</div>
+
 				</section>
-				<section>Why use Appium?</section>
-				<section>
-					<h1>Core Features</h1>
-						<ul>
-						<li>Open Source</li>
-						<li>Integration with Continuous Integration</li>
-						<li>No App Modification Required</li>
-						<li>Built-in Inspector for Element Identification</li>
-						<li>Real Device and Emulator/Simulator Testing</li>
-						<li>Supports Native, Hybrid and Mobile Web Applications</li>
-						<li>Wide Range of Appium Client Libraries</li>
-						</ul>
-				</section>
-				<section>
-					<h1>Appium Architecture</h1>
+				
+				<section  data-background="#ffffff">
+					<h2>Why use Appium?</h2>
 					<ul>
-						<li>Appium Core</li>
-						<li>Drivers</li>
-						<li>Clients</li>
-						<li>Plugins</li>
-						<li>Appium Inspector</li>
+						<li class="fragment">testing legacy applications</li>
+						<li class="fragment">testing applications in browsers</li>
+						<li class="fragment">testing IM bots</li>
+						<li class="fragment">automation of proprietary application</li>
+						<li class="fragment">testing of mobile applications</li>
 					</ul>
-				</section>
-				<section>Platform Support Overview</section>
-
-
-				
-				<section data-background="#000000" data-background-image="/images/aristotle.png">
-
-					Whatever we learn to do, we learn by actually doing it; men come to be builders, for instance, by building, and harp players by playing the harp. In the same way, by doing just acts we come to be just; by doing self-controlled acts, we come to be self-controlled ; and by doing brave acts, we become brave.<br />
-					Aristotle
 					
 				</section>
-				<section>Demo Preparation</section>
-				<section>
+				<section data-background="#ffffff">
+					<h2>Core Features</h2>
+						<ul>
+						<li class="fragment">Open Source</li>
+						<li class="fragment">Integration with Continuous Integration</li>
+						<li class="fragment">No App Modification Required</li>
+						<li class="fragment">Built-in Inspector for Element Identification</li>
+						<li class="fragment">Real Device and Emulator/Simulator Testing</li>
+						<li class="fragment">Supports Native, Hybrid and Mobile Web Applications</li>
+						<li class="fragment">Wide Range of Appium Client Libraries</li>
+						</ul>
+					<a href="https://appium.io/docs/en/latest/">https://appium.io/</a>
+				</section>
+				<section  data-background="#ffffff">
+					<h2>Appium Architecture</h2>
+					<ul>
+						<li class="fragment">Appium Core</li>
+						<li class="fragment">Drivers</li>
+						<li class="fragment">Clients</li>
+						<li class="fragment">Plugins</li>
+						<li class="fragment">Appium Inspector</li>
+					</ul>
+				</section>
+				
+				<section  data-background="#ffffff">
+					<img width="700" src="/images/drivers.png" />
+				</section>
 
-					<div>
+				<section  data-background="#ffffff">
+					<h5>Community Drivers</h5>
+					<img width="1000" src="/images/cummunity-drivers.png" />
+				</section>
+
+				<section  data-background="#ffffff">
+					<h2>Appium Inspector</h2>
+					<img width="500" src="/images/inspector-window.png" />
+					<a href="https://appium.github.io/appium-inspector/latest/">https://appium.github.io/appium-inspector/latest/</a>
+				</section>
+
+
+				<section  data-background="#ffffff">
+
+					<img width="500" src="/images/myprecious.jpg" />
+					
+				</section>
+				
+				<section  data-background="#ffffff">Demo Preparation</section>
+
+
+				<section  data-background="#ffffff">
+					Test iOS application
+					
+					{
+					"platformName": "ios",
+					"appium:automationName": "xcuitest"
+					}
+					
+				</section>
+
+				<section  data-background="#ffffff">
+					Test Windows application
+
+					{
+					"platformName": "ios",
+					"appium:automationName": "xcuitest"
+					}
+
+				</section>
+
+
+
+
+				<section  data-background="#ffffff">
+					<div class="r-hstack r-stretch ">
+					<img width="1000" src="/images/w_edwards_deming_simplilearn.jpeg" />
+					
+					<div style="padding: 50px;font-size: 30px; text-align: left;font-style: italic">
+						<p>
 					Hard work will not ensure quality.<br />
 					Best efforts will not ensure quality, and neither will gadgets, computers or investment in machinery.<br />
 					A necessary ingredient for improvement of quality is the application of profound knowledge.<br />
 					There is no substitute for knowledge. Knowledge we have in abundance. We must learn to use it.<br />
-					W. Edwards Deming<br />
+						</p>
+						<p>
+							W. Edwards Deming
+						</p>
+					</div>
 					</div>
 						
 				</section>
 
-				<section>Thanks!</section>
-				<section>Q&A</section>
+				<section  data-background="#ffffff">Thanks!</section>
+				<section  data-background="#ffffff">Q&A</section>
 				
 			</div>
 		</div>
